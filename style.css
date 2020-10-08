@@ -54,52 +54,31 @@
 /* banner with form and heading in right side */
 
 .banner {
-  background: url(img/banner1.jpg) no-repeat 0px 0px;
+  /* background: url(img/banner1.jpg) no-repeat 0px 0px; */
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
+  url('img/banner1.jpg');;
 	background-size: cover;
-	max-height: 700px;
+  min-height: 500px;
 }
 
 .banner-form {
     display: grid;
-    grid-template-columns: 650px auto;
-    padding: 10px 150px 10px 150px;
+    grid-template-columns: 2fr 1fr;
+    padding: 100px 100px 10px 100px;
     column-gap: 10px;
-}
-
-#enq-form h1 {
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-#enq-form p {
-    color: white;
-    font-weight: 500;
-}
-
-.enq_top {
-    outline: none;
-    padding: 16px 16px;
-    letter-spacing: 1px;
-}
-
-.form-control {
-    margin-top: 20px;
-    padding: 15px 15px;
-    border: none;
-    background-color: #dddddd;
-    border-radius: 5px;
-    width: 400px;
-}
-
-.main-h1 {
-    margin-top: 170px;
+    align-items: center;
 }
 
 .main-h1 h1 {
     color: white;
     font-size: 50px;
     font-weight: 700;
+}
+
+.main-h1 h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
 }
 
 /* about signature global */
@@ -251,9 +230,9 @@ div.gallery {
   font-weight: 700;
 } 
 
-
+/* 
 /* form */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 * {
   margin: 0;
   padding: 0;
@@ -265,22 +244,22 @@ div.gallery {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
+} */
 
-body {
+/* body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
   color: #777;
-}
+} */
 
-.container {
+/* .container {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   position: relative;
-}
+} */
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -288,13 +267,13 @@ body {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  font: 400 14px 'Nunito', sans-serif;
 }
 
 #contact {
   background: #F9F9F9;
   padding: 25px;
-  margin: 50px 20px;
+  /* margin: 100px 20px; */
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -303,6 +282,7 @@ body {
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 #contact h4 {
@@ -310,6 +290,7 @@ body {
   display: block;
   font-size: 13px;
   font-weight: 400;
+  text-align: center;
 }
 
 fieldset {
