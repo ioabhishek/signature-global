@@ -55,8 +55,8 @@
 
 .banner {
   /* background: url(img/banner1.jpg) no-repeat 0px 0px; */
-  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
-  url('img/banner1.jpg');;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)),
+  url('img/image3.jpg');;
 	background-size: cover;
   min-height: 500px;
 }
@@ -199,10 +199,6 @@
     justify-content: center;
 }
 
-.grid-item {
-    border: 1px solid #00b350;
-}
-
 .grid-item h6 {
     text-align: center;
     font-size: 18px;
@@ -302,6 +298,7 @@ div.gallery {
 #contact {
   background: #F9F9F9;
   padding: 25px;
+  border-radius: 9px;
   /* margin: 100px 20px; */
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -340,6 +337,7 @@ fieldset {
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 #contact input[type="text"]:hover,
@@ -351,6 +349,7 @@ fieldset {
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
 #contact textarea {
@@ -363,15 +362,16 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background: #00b350;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
+  border-radius: 5px;
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
+  background: #00b350;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -417,6 +417,7 @@ fieldset {
     font-size: 50px;
     font-weight: 800;
 }
+
 
 /* footer call and whatsapp information  */
 .footer-contact {
