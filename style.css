@@ -481,3 +481,8 @@ fieldset {
   color: white;
   margin: 0;
 }
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
