@@ -459,8 +459,9 @@ fieldset {
   color: white;
   padding: 10px 50px 10px 50px;
   border-radius: 9px;
-  margin-left: 100px;
-  margin-right: 100px;
+  max-width: 365px;
+  /*margin-left: 100px;*/
+  /*margin-right: 100px;*/
   text-align: center;
 }
 
@@ -480,8 +481,9 @@ fieldset {
   background-color: orangered;
   padding: 10px 20px 10px 20px;
   border-radius: 9px;
-  margin-left: 100px;
-  margin-right: 100px;
+  max-width: 365px;
+ /* margin-left: 100px;
+  margin-right: 100px;*/
   text-align: center;
 }
 
@@ -511,4 +513,97 @@ fieldset {
 .img-fluid{
   max-width: 100%;
   height: auto;
+}
+
+@media  only screen and (max-width: 970px) {
+  .navbar{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .banner-form{
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .about-con,
+  .location{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .about-info{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .title,
+  .amenities{
+    padding-top: 40px;
+  }
+  .amenities,
+  .grid-layout{
+    padding-bottom: 40px;
+  }
+  .info-map,
+  .layout-grid,
+  .title,
+  .info-why{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+}
+@media  screen and (max-width: 768px) {
+  .navbar{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .navbar div{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-logo2,
+  .header-wa{
+    margin: 10px 0;
+  }
+  .banner{
+    min-height: auto;
+  }
+  .banner-form,
+  .info-map,
+  .layout-grid,
+  .info-why{
+    padding-bottom: 40px;
+    grid-template-columns: 1fr;
+  }
+  .main-h1 h1,
+  .about-info h2,
+  .left-grid p,
+  .location-map h2,
+  .title h2,
+  .amenities-h2 h2,
+  .left-grid h2{
+    font-size: 7vw;
+  }
+  .main-h1 h2,
+  .about-info h3,
+  .about-info h5,
+  .title h2 p{
+    font-size: 6vw;
+  }
+  .info-map,
+  .info-why{
+    padding-top: 40px;
+  }
+  .left-grid{
+    padding: 0;
+  }
+  .layout-grid .grid-item{
+    text-align: center;
+  }
+  .footer-contact{
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    padding: 10px 15px 10px 15px;
+  }
+
 }
